@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tracalorie | Meal & Calorie Tracker</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <style>
+    .nav-image-button {
+      padding-left: 20px;
+      padding-top: 25px;
+      cursor: pointer;
+    }
+    .nav-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .nav-wrapper .container {
+      display: flex;
+      align-items: center;
+      width: 100%;
+    }
+    .right {
+      margin-left: auto;
+      padding-right: 10px;
+    }
+
+/* Ovenstående er gentagelser fra Index.html, som stammer fra det eksisterende github-projekt*/
+
+    .workout-table-container {
+      margin: 20px;
+      overflow-x: auto; 
+    }
+    .workout-table th, .workout-table td {
+      border: 1px solid #000;
+      padding: 8px;
+      text-align: center;
+    }
+    .workout-header img {
+      height: 50px;
+    }
+    .add-workout-btn {
+      margin-bottom: 20px;
+      padding: 10px 20px;
+    }
+    .finish-workout-btn {
+      float: right;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    .final-table {
+        margin-top: 40px;
+    }
+    .final-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+    .image-button img {
+        height: 20px;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="nav-wrapper blue">
+      <div class="container">
+        <a href="index.html" class="nav-image-button">
+          <img src="C:\Projects\CalTrack\tracalorie\src\img\tracalorie_img.png" alt="Button Image" height="40">
+        </a>
+        <h1 class="brand-logo center">Workouts</h1>
+        <ul class="right">
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="workout-table-container">
+    <table class="highlight workout-table">
+      <thead>
+        <tr>
+          <th colspan="4" class="workout-header">
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+              <span>Today</span>
+              <button class="btn blue add-exercise-btn">Add exercise</button>
+            </div>
+          </th>
+        </tr>
+        <tr>
+          <th>Exercise</th>
+          <th>Sets</th>
+          <th>Reps</th>
+          <th>Weight</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Frontbar squat</td>
+          <td>3</td>
+          <td>10</td>
+          <td>120</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <button class="btn blue finish-workout-btn">
+      FINISH WORKOUT
+    </button>
+
+    <table class="highlight workout-table">
+        <thead>
+          <tr>
+            <th colspan="4" style="padding: 10px;">
+              <div style="display: flex; justify-content: space-between; align-items: center;">
+                <span class="date">20-05-2024</span>
+                <a href="#">
+                  <img src="C:\Projects\CalTrack\tracalorie\src\img\dropdown.png" alt="Button Image" style="height: 20px;">
+                </a>
+              </div>
+            </th>
+          </tr>
+          <tr>
+            <th>Exercise</th>
+            <th>Sets</th>
+            <th>Reps</th>
+            <th>Weight</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Face-pulls</td>
+            <td>2</td>
+            <td>10</td>
+            <td>32.5</td>
+          </tr>
+          <tr>
+            <td>T-bar row</td>
+            <td>3</td>
+            <td>8</td>
+            <td>40</td>
+          </tr>
+          <tr>
+            <td>Lat pulldown</td>
+            <td>3</td>
+            <td>12</td>
+            <td>60</td>
+          </tr>
+          <tr>
+            <td>Pullovers</td>
+            <td>2</td>
+            <td>15</td>
+            <td>22.5</td>
+          </tr>
+          <tr>
+            <td>EZ-bar curls</td>
+            <td>3</td>
+            <td>12</td>
+            <td>25</td>
+          </tr>
+          <tr>
+            <td>Hammer curls</td>
+            <td>2</td>
+            <td>10</td>
+            <td>20</td>
+          </tr>
+        </tbody>
+      </table>
+
+    <table class="highlight workout-table final-table">
+        <thead>
+          <tr>
+            <th class="final-header">
+              <span class="date">18-05-2024</span>
+              <a href="#" class="image-button">
+                <img src="C:\Projects\CalTrack\tracalorie\src\img\dropdown.png" alt="Button Image">
+              </a>
+            </th>
+          </tr>
+        </thead>
+      </table>
+      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+      <script type="module" src="js/main.js"></script>
+      </body>
+      </html>
